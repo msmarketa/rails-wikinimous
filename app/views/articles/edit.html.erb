@@ -1,0 +1,10 @@
+<h1>Edit an article</h1>
+<%= form_for(@article) do |a| %>
+  <%= a.label :title %>
+  <%= a.text_field :title %>
+
+  <%= a.label :content %>
+  <%= a.text_area  :content, size: '50x10' %>
+
+  <%= a.submit %>
+<% end %>
